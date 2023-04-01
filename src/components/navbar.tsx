@@ -1,4 +1,4 @@
-export const Navbar = () => {
+export default function Navbar () {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark " aria-label="Eighth navbar example">
             <div className="container">
