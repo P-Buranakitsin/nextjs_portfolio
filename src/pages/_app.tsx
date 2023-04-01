@@ -6,6 +6,7 @@ import Layout from '@/components/layout';
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
+    // @ts-ignore
     import('bootstrap/dist/js/bootstrap');
   }, []);
 
