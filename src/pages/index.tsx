@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.scss';
+import HomeSection from '@/components/home';
+import AboutSection from '@/components/about';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,7 +16,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-       
+        <section className='min-vh-100 d-flex align-items-center'>
+          <HomeSection />
+        </section>
+        <section className='min-vh-100 d-flex align-items-center'>
+          <AboutSection />
+        </section>
       </>
     </>
   );

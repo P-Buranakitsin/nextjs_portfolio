@@ -5,9 +5,27 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export default function CollapsibleNavbar() {
   return (
-    <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" sticky='top' className='pt-4 pb-4'>
+    <Navbar
+      collapseOnSelect
+      expand="md"
+      bg="dark"
+      variant="dark"
+      fixed='top'
+      className="pt-3 pb-4"
+    >
       <Container>
-        <Navbar.Brand href="">PavaruthB</Navbar.Brand>
+        <Navbar.Brand>
+          <Button
+            className="rounded-circle fw-semibold"
+            variant="outline-primary"
+            style={{ width: '50px', height: '50px' }}
+            onClick={() => {
+              console.log('clicked ');
+            }}
+          >
+            PB
+          </Button>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
           id="responsive-navbar-nav"
@@ -25,7 +43,9 @@ export default function CollapsibleNavbar() {
             <Nav.Link>Projects</Nav.Link>
             <Nav.Link>Contact</Nav.Link>
           </Nav>
-          <Button className='ms-md-2 mt-md-0 mt-2' variant="outline-primary">Resume</Button>
+          <Button className="ms-md-2 mt-md-0 mt-2" variant="outline-primary">
+            Resume
+          </Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
