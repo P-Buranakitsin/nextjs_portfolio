@@ -10,18 +10,15 @@ export default function CollapsibleNavbar() {
       expand="md"
       bg="dark"
       variant="dark"
-      fixed='top'
+      fixed="top"
       className="pt-3 pb-4"
     >
       <Container>
-        <Navbar.Brand>
+        <Navbar.Brand href="/">
           <Button
             className="rounded-circle fw-semibold"
             variant="outline-primary"
             style={{ width: '50px', height: '50px' }}
-            onClick={() => {
-              console.log('clicked ');
-            }}
           >
             PB
           </Button>
@@ -33,13 +30,13 @@ export default function CollapsibleNavbar() {
         >
           <Nav>
             <Nav.Link
-              onClick={() => {
-                console.log('clicked');
-              }}
+              active={false}
+              href="./#about"
             >
               About me
             </Nav.Link>
             <Nav.Link>Experience</Nav.Link>
+            <Nav.Link>Education</Nav.Link>
             <Nav.Link>Projects</Nav.Link>
             <Nav.Link>Contact</Nav.Link>
           </Nav>

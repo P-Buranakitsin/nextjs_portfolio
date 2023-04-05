@@ -16,10 +16,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <section className='min-vh-100 d-flex align-items-center'>
+        <section id="home" className="min-vh-100 d-flex align-items-center">
           <HomeSection />
         </section>
-        <section className='min-vh-100 d-flex align-items-center'>
+        <section id="about" className={`min-vh-100 d-flex align-items-center ${styles.secPad}`}>
           <AboutSection />
         </section>
       </>

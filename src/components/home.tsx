@@ -1,3 +1,5 @@
+import { Button } from "react-bootstrap";
+
 export default function HomeSection() {
   return (
     <div className="bg-dark text-secondary px-4 py-5 text-center">
@@ -14,12 +16,13 @@ export default function HomeSection() {
             improving my skills and staying up to date with industry trends.
           </p>
           <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button
-              type="button"
-              className="btn btn-outline-primary btn-lg px-4 me-sm-3"
+            <Button
+              variant="outline-primary"
+              className="btn-lg px-4 me-sm-3"
+              href="./#about"
             >
               Get to know me
-            </button>
+            </Button>
             <button type="button" className="btn btn-outline-light btn-lg px-4">
               Contact me
             </button>
