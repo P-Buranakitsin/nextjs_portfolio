@@ -29,14 +29,13 @@ export default function CollapsibleNavbar() {
           className="justify-content-end"
         >
           <Nav>
-            <Nav.Link
-              active={false}
-              href="./#about"
-            >
+            <Nav.Link active={false} href="./#about">
               About me
             </Nav.Link>
+            <Nav.Link active={false} href="./#education">
+              Education
+            </Nav.Link>
             <Nav.Link>Experience</Nav.Link>
-            <Nav.Link>Education</Nav.Link>
             <Nav.Link>Projects</Nav.Link>
             <Nav.Link>Contact</Nav.Link>
           </Nav>

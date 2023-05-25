@@ -21,11 +21,11 @@ const mySkills: { name: string; bg: Variant }[] = [
   },
   {
     name: 'Git',
-    bg: 'danger'
+    bg: 'danger',
   },
   {
     name: 'Responsive Web Design',
-    bg: 'secondary'
+    bg: 'secondary',
   },
   {
     name: 'Java',
@@ -33,11 +33,11 @@ const mySkills: { name: string; bg: Variant }[] = [
   },
   {
     name: 'Python',
-    bg: 'primary'
+    bg: 'primary',
   },
   {
     name: 'Django',
-    bg: 'success'
+    bg: 'success',
   },
   {
     name: 'SASS',
@@ -45,7 +45,7 @@ const mySkills: { name: string; bg: Variant }[] = [
   },
   {
     name: 'SQL',
-    bg: 'primary'
+    bg: 'primary',
   },
   {
     name: 'Node.js',
@@ -53,15 +53,21 @@ const mySkills: { name: string; bg: Variant }[] = [
   },
   {
     name: 'Express.js',
-    bg: 'warning'
-  }
+    bg: 'warning',
+  },
+  {
+    name: 'Bootstrap',
+    bg: 'primary',
+  },
 ];
 
 export default function AboutSection() {
   const listMySkills = mySkills.map((skill, index) => {
     return (
       <h5 key={index} className="">
-        <Badge className='me-3' bg={skill.bg}>{skill.name}</Badge>
+        <Badge className="me-3" bg={skill.bg}>
+          {skill.name}
+        </Badge>
       </h5>
     );
   });
