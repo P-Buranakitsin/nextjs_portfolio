@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.scss';
-import HomeSection from '@/components/home';
-import AboutSection from '@/components/about';
-import EducationSection from '@/components/education';
+import HomeSection from '@/components/sections/home';
+import AboutSection from '@/components/sections/about';
+import EducationSection from '@/components/sections/education';
 
 export default function Home() {
   return (

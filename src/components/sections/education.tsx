@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import LinkButton from './linkButton';
-import Collapse from './collapse';
+import LinkButton from '../linkButton';
+import Collapse from '../collapse';
 
 const degrees: {
   name: string;
