@@ -1,22 +1,22 @@
 import { useState } from 'react';
 
 interface CollapseProps {
-  allCertifications: JSX.Element[];
+  content: JSX.Element[];
 }
 
-const Collapse: React.FC<CollapseProps> = ({ allCertifications }) => {
+const Collapse: React.FC<CollapseProps> = ({ content }) => {
   const [collapseOpen, setCollapseOpen] = useState(false);
 
   const toggleCollapse = () => {
     setCollapseOpen(!collapseOpen);
   };
 
-  const collapseButtonText = collapseOpen ? 'Hide' : 'Show all';
+  const collapseButtonText = collapseOpen ? 'Show less' : 'Show all';
 
   return (
     <div>
       <div className="collapse" id="collapseExample">
-        {allCertifications}
+        {content}
       </div>
       <div className="d-flex align-self-center justify-content-center">
         <button

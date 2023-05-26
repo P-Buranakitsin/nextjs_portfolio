@@ -35,7 +35,9 @@ export default function CollapsibleNavbar() {
             <Nav.Link active={false} href="./#education">
               Education
             </Nav.Link>
-            <Nav.Link>Experience</Nav.Link>
+            <Nav.Link active={false} href="./#experience">
+              Experience
+            </Nav.Link>
             <Nav.Link>Projects</Nav.Link>
             <Nav.Link>Contact</Nav.Link>
           </Nav>

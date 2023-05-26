@@ -3,6 +3,7 @@ import styles from '@/styles/Home.module.scss';
 import HomeSection from '@/components/sections/home';
 import AboutSection from '@/components/sections/about';
 import EducationSection from '@/components/sections/education';
+import ExperienceSection from '@/components/sections/experience';
 
 export default function Home() {
   return (
@@ -28,6 +29,12 @@ export default function Home() {
           className={`min-vh-100 d-flex align-items-center ${styles.secPad}`}
         >
           <EducationSection />
+        </section>
+        <section
+          id="experience"
+          className={`min-vh-100 d-flex align-items-center ${styles.secPad}`}
+        >
+          <ExperienceSection />
         </section>
       </>
     </>

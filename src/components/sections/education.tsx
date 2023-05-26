@@ -88,9 +88,8 @@ export default function EducationSection() {
     );
   });
 
-  const listCertifications = certifications
-    .slice(0, 3)
-    .map((certification, index) => {
+  const listCertifications = (start: number, end: number) => {
+    return certifications.slice(start, end).map((certification, index) => {
       return (
         <div className="row mb-4 mt-4" key={index}>
           <div className="col-sm-2">
@@ -119,38 +118,7 @@ export default function EducationSection() {
         </div>
       );
     });
-
-  const allCertifications = certifications
-    .slice(3)
-    .map((certification, index) => {
-      return (
-        <div className="row mb-4 mt-4" key={index}>
-          <div className="col-sm-2">
-            <Image
-              alt=""
-              src={certification.img}
-              width={100}
-              height={100}
-              className="img-fluid rounded "
-            />
-          </div>
-          <div className="col-sm-10 mt-sm-0 mt-3">
-            <h5 className="text-white fw-medium ">{certification.name}</h5>
-            <div className="fs-5 text-white fw-light ">
-              {certification.issuingOrg}
-            </div>
-            <p className="fs-6 text-secondary fw-medium">
-              Issued {certification.issueDate}
-            </p>
-            <div className="d-flex flex-column">
-              <div className="">
-                <LinkButton url={certification.url} label="Show credential" />
-              </div>
-            </div>
-          </div>
-        </div>
-      );
-    });
+  };
 
   return (
     <div className="container">
@@ -167,8 +135,8 @@ export default function EducationSection() {
         <div className="col-md-6 mt-md-0 mt-3">
           <h4 className="text-white fw-semibold">Certifications</h4>
           <div className="col-12">
-            {listCertifications}
-            <Collapse allCertifications={allCertifications} />
+            {listCertifications(0, 3)}
+            <Collapse content={listCertifications(3, 999)} />
           </div>
         </div>
       </div>
