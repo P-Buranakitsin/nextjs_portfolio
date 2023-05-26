@@ -11,7 +11,7 @@ export default function CollapsibleNavbar() {
       bg="dark"
       variant="dark"
       fixed="top"
-      className="pt-3 pb-4"
+      className="pt-2 pb-2"
     >
       <Container>
         <Navbar.Brand href="/">

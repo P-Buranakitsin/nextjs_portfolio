@@ -50,7 +50,7 @@ const jobs: {
   },
   {
     title: 'Intern',
-    company: 'Thai Airways International',
+    company: 'Thai Airways International · Internship',
     img: '/images/thai_airways.jpeg',
     duration: 'Jun 2018 - Jul 2018 · 2 mos',
     location: 'Bangkok Metropolitan Area',
