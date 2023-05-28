@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
-import { BoxArrowUpRight } from 'react-bootstrap-icons';
+import { BoxArrowUpRight, Github } from 'react-bootstrap-icons';
 
 interface LinkButtonProps {
   url: string;
   label: string;
+  useGitHubIcon: boolean;
 }
 
-const LinkButton: React.FC<LinkButtonProps> = ({ url, label }) => {
+const LinkButton: React.FC<LinkButtonProps> = ({
+  url,
+  label,
+  useGitHubIcon,
+}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleClick = () => {
@@ -32,13 +37,23 @@ const LinkButton: React.FC<LinkButtonProps> = ({ url, label }) => {
     >
       <div className="d-flex align-items-center justify-content-center">
         {label}
-        <BoxArrowUpRight
-          color={iconColor}
-          size={18}
-          className="ms-2"
-          stroke={iconColor}
-          strokeWidth={1}
-        />
+        {useGitHubIcon ? (
+          <Github
+            color={iconColor}
+            size={22}
+            className="ms-2"
+            stroke={iconColor}
+            strokeWidth={1}
+          />
+        ) : (
+          <BoxArrowUpRight
+            color={iconColor}
+            size={18}
+            className="ms-2"
+            stroke={iconColor}
+            strokeWidth={1}
+          />
+        )}
       </div>
     </button>
   );

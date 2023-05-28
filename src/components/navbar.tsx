@@ -38,7 +38,9 @@ export default function CollapsibleNavbar() {
             <Nav.Link active={false} href="./#experience">
               Experience
             </Nav.Link>
-            <Nav.Link>Projects</Nav.Link>
+            <Nav.Link active={false} href="./#projects">
+              Projects
+            </Nav.Link>
             <Nav.Link>Contact</Nav.Link>
           </Nav>
           <Button className="ms-md-2 mt-md-0 mt-2" variant="outline-primary">

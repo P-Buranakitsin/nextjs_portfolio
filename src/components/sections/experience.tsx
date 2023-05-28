@@ -108,6 +108,7 @@ export default function ExperienceSection() {
             <LinkButton
               url={job.credentials}
               label="Show internship certificate"
+              useGitHubIcon={false}
             />
           )}
         </div>
