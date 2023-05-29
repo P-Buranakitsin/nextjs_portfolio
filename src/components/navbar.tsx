@@ -45,7 +45,16 @@ export default function CollapsibleNavbar() {
               Contact
             </Nav.Link>
           </Nav>
-          <Button className="ms-md-2 mt-md-0 mt-2" variant="outline-primary">
+          <Button
+            className="ms-md-2 mt-md-0 mt-2"
+            variant="outline-primary"
+            onClick={() => {
+              window.open(
+                '/pdfs/PavaruthB_CV.pdf',
+                '_blank'
+              );
+            }}
+          >
             Resume
           </Button>
         </Navbar.Collapse>
