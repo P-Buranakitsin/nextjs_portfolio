@@ -15,13 +15,15 @@ export default function CollapsibleNavbar() {
     >
       <Container>
         <Navbar.Brand href="/">
-          <Button
-            className="rounded-circle fw-semibold"
-            variant="outline-primary"
-            style={{ width: '50px', height: '50px' }}
-          >
-            PB
-          </Button>
+          <div className="d-flex flex-row align-items-center">
+            <Button
+              className="rounded-circle fw-semibold"
+              variant="outline-primary"
+              style={{ width: '50px', height: '50px' }}
+            >
+              PB
+            </Button>
+          </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
@@ -49,10 +51,7 @@ export default function CollapsibleNavbar() {
             className="ms-md-2 mt-md-0 mt-2"
             variant="outline-primary"
             onClick={() => {
-              window.open(
-                '/pdfs/PavaruthB_CV.pdf',
-                '_blank'
-              );
+              window.open('/pdfs/PavaruthB_CV.pdf', '_blank');
             }}
           >
             Resume

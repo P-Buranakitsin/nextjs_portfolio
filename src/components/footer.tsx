@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="py-3 my-4">
       <div className="container">
         <div
-          className={`text-center text-white fw-medium fs-6 ${styles.footer}`}
+          className={`mx-auto text-center text-white fw-medium fs-6 ${styles.footer}`}
           onClick={() => {
             window.open(
               'https://github.com/P-Buranakitsin/nextjs_portfolio',
