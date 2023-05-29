@@ -111,7 +111,7 @@ export default function EducationSection() {
             </p>
             <div className="d-flex flex-column">
               <div className="">
-                <LinkButton url={certification.url} label="Show credential" />
+                <LinkButton url={certification.url} label="Show credential" useGitHubIcon={false} />
               </div>
             </div>
           </div>

@@ -294,7 +294,7 @@ export default function ProjectsSection() {
           </h2>
           {listFeaturedProjects}
         </div>
-        <div className="col-sm-10">
+        <div className="col-md-10">
           <h3 className="fw-semibold text-white text-center mt-2 mb-4">
             Other Noteworthy Projects
           </h3>

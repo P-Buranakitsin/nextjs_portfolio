@@ -1,3 +1,4 @@
+import Footer from './footer';
 import Navbar from './navbar'
 import type { PropsWithChildren } from "react";
 
@@ -6,6 +7,7 @@ export default function Layout(props: PropsWithChildren) {
         <>
             <Navbar />
             <main>{props.children}</main>
+            <Footer />
         </>
     )
 }

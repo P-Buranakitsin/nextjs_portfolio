@@ -1,4 +1,4 @@
-import { Button } from "react-bootstrap";
+import { Button } from 'react-bootstrap';
 
 export default function HomeSection() {
   return (
@@ -23,9 +23,13 @@ export default function HomeSection() {
             >
               Get to know me
             </Button>
-            <button type="button" className="btn btn-outline-light btn-lg px-4">
+            <Button
+              variant="outline-light"
+              className=" btn-lg px-4"
+              href="./#contact"
+            >
               Contact me
-            </button>
+            </Button>
           </div>
         </div>
       </div>
