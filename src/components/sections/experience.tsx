@@ -83,7 +83,7 @@ export default function ExperienceSection() {
           <ul>
             {job.descriptions.map((description, index) => {
               return (
-                <li className="text-white" key={index}>
+                <li className="text-white fw-light" key={index}>
                   {description}
                 </li>
               );
@@ -95,7 +95,7 @@ export default function ExperienceSection() {
               {job.skills.map((skill, index, job) => {
                 return (
                   <>
-                    <div key={index} className="text-secondary fw-semibold">
+                    <div key={index} className="text-white fw-medium">
                       {skill.name}
                     </div>
                     {index < job.length - 1 && (

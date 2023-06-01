@@ -65,7 +65,7 @@ export default function AboutSection() {
   const listMySkills = mySkills.map((skill, index) => {
     return (
       <li className="text-white me-2" key={index}>
-        <div className="text-secondary fw-semibold">{skill.name}</div>
+        <div className="text-white fw-semibold">{skill.name}</div>
       </li>
     );
   });
