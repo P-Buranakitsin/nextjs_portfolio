@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { Badge } from 'react-bootstrap';
 import { Variant } from 'react-bootstrap/esm/types';
+import styles from '@/styles/components/sections/About.module.scss';
 
 const mySkills: { name: string; bg: Variant }[] = [
   {
@@ -64,11 +64,9 @@ const mySkills: { name: string; bg: Variant }[] = [
 export default function AboutSection() {
   const listMySkills = mySkills.map((skill, index) => {
     return (
-      <h5 key={index} className="">
-        <Badge className="me-3" bg={skill.bg}>
-          {skill.name}
-        </Badge>
-      </h5>
+      <li className="text-white me-2" key={index}>
+        <div className="text-secondary fw-semibold">{skill.name}</div>
+      </li>
     );
   });
 
@@ -115,7 +113,7 @@ export default function AboutSection() {
           <p className="fs-5 text-secondary ">
             Here are some skills that I am confident with:
           </p>
-          <div className="d-flex flex-row flex-wrap">{listMySkills}</div>
+          <ul className={`${styles.ulSkills}`}>{listMySkills}</ul>
         </div>
       </div>
     </div>

@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { Badge } from 'react-bootstrap';
 import { Variant } from 'react-bootstrap/esm/types';
 import LinkButton from '../linkButton';
 
@@ -91,15 +90,18 @@ export default function ExperienceSection() {
             })}
           </ul>
           {job.skills.length > 0 && (
-            <div className="d-flex flex-wrap">
+            <div className="d-flex flex-wrap align-items-center">
               <div className="fs-6 text-white fw-bold me-3">Skills:</div>
-              {job.skills.map((skill, index) => {
+              {job.skills.map((skill, index, job) => {
                 return (
-                  <h5 key={index} className="">
-                    <Badge className="me-3" bg={skill.bg}>
+                  <>
+                    <div key={index} className="text-secondary fw-semibold">
                       {skill.name}
-                    </Badge>
-                  </h5>
+                    </div>
+                    {index < job.length - 1 && (
+                      <div className="text-white mx-3">·</div>
+                    )}
+                  </>
                 );
               })}
             </div>
